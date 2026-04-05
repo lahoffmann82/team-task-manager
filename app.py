@@ -26,7 +26,7 @@ def get_gsheet_connection():
     creds_dict = st.secrets["gcp_service_account"]
     creds = Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
     client = gspread.authorize(creds)
-    spreadsheet = client.open(st.secrets["spreadsheet"]["name"])
+    spreadsheet = client.open_by_key(st.secrets["spreadsheet"]["key"])
     return spreadsheet
 
 
