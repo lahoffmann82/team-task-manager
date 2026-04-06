@@ -1,9 +1,0 @@
-streamlit
-gspread
-google-auth
-google-api-python-client
-flask
-flask-sqlalchemy
-flask-login
-werkzeug
-weasyprint
